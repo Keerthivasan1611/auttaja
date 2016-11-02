@@ -162,5 +162,194 @@ async def on_message_edit(before, after):
             except Exception as e:
                 logger.error(e)
 
+@dclient.event
+async def on_channel_delete(channel):
+    if currentFuncName() in app.callbacks:
+        for callback in app.callbacks[currentFuncName()]:
+            try:
+                callback(channel, app)
+            except Exception as e:
+                logger.error(e)
+
+@dclient.event
+async def on_channel_create(channel):
+    if currentFuncName() in app.callbacks:
+        for callback in app.callbacks[currentFuncName()]:
+            try:
+                callback(channel, app)
+            except Exception as e:
+                logger.error(e)
+
+@dclient.event
+async def on_channel_update(before, after):
+    if currentFuncName() in app.callbacks:
+        for callback in app.callbacks[currentFuncName()]:
+            try:
+                callback(before, after, app)
+            except Exception as e:
+                logger.error(e)
+
+@dclient.event
+async def on_member_join(member):
+    if currentFuncName() in app.callbacks:
+        for callback in app.callbacks[currentFuncName()]:
+            try:
+                callback(member, app)
+            except Exception as e:
+                logger.error(e)
+
+@dclient.event
+async def on_member_remove(member):
+    if currentFuncName() in app.callbacks:
+        for callback in app.callbacks[currentFuncName()]:
+            try:
+                callback(member, app)
+            except Exception as e:
+                logger.error(e)
+
+@dclient.event
+async def on_member_update(before, after):
+    if currentFuncName() in app.callbacks:
+        for callback in app.callbacks[currentFuncName()]:
+            try:
+                callback(before, after, app)
+            except Exception as e:
+                logger.error(e)
+
+@dclient.event
+async def on_server_join(server):
+    if currentFuncName() in app.callbacks:
+        for callback in app.callbacks[currentFuncName()]:
+            try:
+                callback(server, app)
+            except Exception as e:
+                logger.error(e)
+
+@dclient.event
+async def on_server_remove(server):
+    if currentFuncName() in app.callbacks:
+        for callback in app.callbacks[currentFuncName()]:
+            try:
+                callback(server, app)
+            except Exception as e:
+                logger.error(e)
+
+@dclient.event
+async def on_server_update(before, after):
+    if currentFuncName() in app.callbacks:
+        for callback in app.callbacks[currentFuncName()]:
+            try:
+                callback(before, after, app)
+            except Exception as e:
+                logger.error(e)
+
+@dclient.event
+async def on_server_role_create(role):
+    if currentFuncName() in app.callbacks:
+        for callback in app.callbacks[currentFuncName()]:
+            try:
+                callback(role, app)
+            except Exception as e:
+                logger.error(e)
+
+@dclient.event
+async def on_server_role_delete(role):
+    if currentFuncName() in app.callbacks:
+        for callback in app.callbacks[currentFuncName()]:
+            try:
+                callback(role, app)
+            except Exception as e:
+                logger.error(e)
+
+@dclient.event
+async def on_server_role_update(before, after):
+    if currentFuncName() in app.callbacks:
+        for callback in app.callbacks[currentFuncName()]:
+            try:
+                callback(before, after, app)
+            except Exception as e:
+                logger.error(e)
+
+@dclient.event
+async def on_server_emojis_update(before, after):
+    if currentFuncName() in app.callbacks:
+        for callback in app.callbacks[currentFuncName()]:
+            try:
+                callback(before, after, app)
+            except Exception as e:
+                logger.error(e)
+
+@dclient.event
+async def on_server_available(server):
+    if currentFuncName() in app.callbacks:
+        for callback in app.callbacks[currentFuncName()]:
+            try:
+                callback(server, app)
+            except Exception as e:
+                logger.error(e)
+
+@dclient.event
+async def on_server_unavailable(server):
+    if currentFuncName() in app.callbacks:
+        for callback in app.callbacks[currentFuncName()]:
+            try:
+                callback(server, app)
+            except Exception as e:
+                logger.error(e)
+
+@dclient.event
+async def on_voice_state_update(before, after):
+    if currentFuncName() in app.callbacks:
+        for callback in app.callbacks[currentFuncName()]:
+            try:
+                callback(before, after, app)
+            except Exception as e:
+                logger.error(e)
+
+@dclient.event
+async def on_member_ban(member):
+    if currentFuncName() in app.callbacks:
+        for callback in app.callbacks[currentFuncName()]:
+            try:
+                callback(member, app)
+            except Exception as e:
+                logger.error(e)
+
+@dclient.event
+async def on_member_unban(server, user):
+    if currentFuncName() in app.callbacks:
+        for callback in app.callbacks[currentFuncName()]:
+            try:
+                callback(server, app)
+            except Exception as e:
+                logger.error(e)
+
+@dclient.event
+async def on_typing(channel, user, when):
+    if currentFuncName() in app.callbacks:
+        for callback in app.callbacks[currentFuncName()]:
+            try:
+                callback(channel, user, when, app)
+            except Exception as e:
+                logger.error(e)
+
+@dclient.event
+async def on_group_join(channel, user):
+    if currentFuncName() in app.callbacks:
+        for callback in app.callbacks[currentFuncName()]:
+            try:
+                callback(channel, user, app)
+            except Exception as e:
+                logger.error(e)
+
+@dclient.event
+async def on_group_remove(channel, user):
+    if currentFuncName() in app.callbacks:
+        for callback in app.callbacks[currentFuncName()]:
+            try:
+                callback(channel, user, app)
+            except Exception as e:
+                logger.error(e)
+
 if __name__ == '__main__':
     main()
