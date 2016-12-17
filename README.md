@@ -3,6 +3,8 @@ Auttaja (finnish for helper) is a modular Python 3.5 Discord bot. Auttaja is jus
 
 Please note, this is still very much a work in progress
 
+[Add Auttaja to Your Server](https://discordapp.com/api/oauth2/authorize?client_id=242730576195354624&scope=bot&permissions=0)
+
 ## Quickstart
 The best way to start is to take a look at some of the example plugins.  We will go over a few of the ideas behind the API here.  The API was designed to give you a full access to the Discord.py API while abstracting a few things away, such as commands and permissions.
 
