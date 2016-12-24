@@ -5,7 +5,7 @@ Please note, this is still very much a work in progress
 
 ## Add to your server!
 This is the hosted version, with the most up-to-date codebase.  The version here in the Github repo is extremely out of date at this point, this will be fixed soon.
-[Add Auttaja to Your Server](https://discordapp.com/api/oauth2/authorize?client_id=242730576195354624&scope=bot&permissions=0)
+[Add Auttaja to Your Server](https://discordapp.com/oauth2/authorize?client_id=242730576195354624&scope=bot&permissions=1576270967)
 
 ## Quickstart
 The best way to start is to take a look at some of the example plugins.  We will go over a few of the ideas behind the API here.  The API was designed to give you a full access to the Discord.py API while abstracting a few things away, such as commands and permissions.
